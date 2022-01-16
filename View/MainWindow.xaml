@@ -6,8 +6,13 @@
         xmlns:local="clr-namespace:WpfApp19"
         xmlns:vm="clr-namespace:WpfApp19.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="500" MinWidth="500" MaxHeight="500" MaxWidth="500"
-        Style="{StaticResource WindowStyle}">
+        Title="MainWindow" MinHeight="500" MinWidth="500" MaxHeight="500" MaxWidth="500">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFF9E13C" Offset="0"/>
+            <GradientStop Color="#FF2F28FF" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
